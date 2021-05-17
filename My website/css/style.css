@@ -1,0 +1,529 @@
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin:0;
+}
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+img{
+  margin:0px 10px;
+  padding:0;
+}
+
+/*  Home Header  */
+#home-header{
+    border-bottom:lightcoral solid ;
+}
+#home-header h1{
+    padding:30px;
+    text-align: center;
+}
+#home-header h1{
+  margin-bottom:70px;
+}
+#home-header a{
+    text-decoration: none;
+    color:unset;
+}
+
+
+/* Main header */
+#main-header{
+  background:whitesmoke;
+  color:black;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+#main-header nav a{
+  color:black;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+  font-weight:bold;
+}
+
+#main-header h1 a{
+  color:black;
+  text-decoration:none;
+}
+
+#main-header ul{
+  margin:0;
+  padding:0;
+  
+}
+
+#main-header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+#main-header h1{
+  float:left;
+}
+.adjustment{
+  width: auto;
+  overflow:hidden;
+}
+.adjustment{
+  width: auto;
+  overflow:hidden;
+}
+
+#main-header h1{
+  margin:0;
+}
+
+#main-header nav{
+  float:right;
+  margin-top:10px;
+}
+
+#main-header .highlight, #main-header .current a{
+  color:darkslateblue;
+  font-weight:bold;
+}
+
+#main-header a:hover{
+  color:#cccccc;
+}
+
+
+/* Navbar */
+#home-navbar{
+    text-align: center;
+    background-color: #333;
+    color:#fff;
+}
+
+#navbar{
+    text-align: right;
+}
+
+.navbar ul{
+    padding:0;
+    list-style: none;
+}
+
+.navbar li{
+    display:inline;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+.navbar a:hover{
+    color:darkgray;
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#adjustment{
+  font-size: 90px;
+}
+#adjustment2{
+  font-size: 90px;
+}
+
+/* Showcase */
+#showcase{
+    min-height:400px;
+    background:url('../images/alors.jpg') no-repeat 0 -400px;
+    background-position: center;
+    text-align:center;
+    color:#fff;
+  }
+  
+  #showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+
+  footer{
+  background:#333;
+  color:#fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+  padding-top: 50px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+#boxes a{
+  color: #333;
+  text-decoration: none;
+}
+
+#boxes a:hover{
+  color: steelblue;
+}
+
+/*  Slides  */
+/* 1 */
+.slider{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.sign{
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+}
+.sign a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.act{
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+.sign a:hover{
+	color: #00a7ff; /* blue */
+	border-color: #00a7ff; /* blue */
+}
+/* /1 */
+
+/* 2 */
+.slider{
+	position: relative;
+	width: 100%;
+	background: #2c3e50; /* darckblue */
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+/* /2 */
+
+/* javascript */
+.active, .dot:hover{
+	border-color: #00a7ff; /* blue */
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* 3 */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 2s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: #00a7ff; /* blue */
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+.slider img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  	-webkit-animation-duration: 40s;
+  	animation-name: zoomin;
+  	animation-duration: 40s;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+/* /4 */
+
+
+
+/* 5 */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+	}
+}
+/* /6 */
+
+/* Comments */
+.comments_image{
+  border-radius: 50%;
+}
+  
+/* Media Queries */
+@media(max-width: 768px){
+    #home-header{
+      padding-bottom:20px;
+    }
+    #main-header h1{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    #main-header nav{
+      text-align: center;
+    }
+    #showcase h1{
+      margin-top:40px;
+    }
+    #boxes .box{
+      display:block;
+      width:100%;
+      float:none;
+    }
+  }
+  @media(max-width: 739px){
+    
+    #adjustment{
+      font-size: 120px;
+    }
+  }
+  @media(max-width: 348px){
+    
+    #adjustment{
+      font-size: 170px;
+    }
+  }
+  @media(max-width: 236px){
+    
+    #adjustment{
+      font-size: 200px;
+    }
+  }
+
+  @media(max-width: 722px){
+    
+    #adjustment2{
+      font-size: 120px;
+    }
+  }
+
+  @media(max-width: 348px){
+    
+    #adjustment2{
+      font-size: 170px;
+    }
+  }
+  @media(max-width: 238px){
+    
+    #adjustment2{
+      font-size: 200px;
+    }
+  }
